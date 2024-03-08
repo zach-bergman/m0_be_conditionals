@@ -18,28 +18,35 @@ string_teachers = "4"
 numberDogs = 0
 
 # EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
-puts "Is number_teachers greater than number_students?", number_teachers > number_students
+# puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts number_students <= 21
 # this should print: true
 
 
@@ -54,21 +61,36 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# This line of code is using the less than comparison operator to compare the integers 4 and 9,
+# to return a boolean value of false and print that boolean value to the terminal.
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+# The first line of code is storing the integer 3 in the variable books.
+# The second line of code is using the less than comparison operator to compare the integer 4 and
+# the variable books, which is storing the integer 3 as it's value. That conditional statement will
+# return the boolean value of false, which will be printed to the terminal.
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# The first line of code is storing the integer 6 in the variable friends.
+# The second line of code is storing the integer 2 in the variable of siblings.
+# The third line of code is using the greater than comparison operator to compare the values of the 
+# friends variable and the siblings variable. That conditional statement will return the boolean of
+# true, which will then be printed to the terminal.
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+# The first line of code is storing the integer 9 in the variable attendees.
+# The second line of code is storing the integer 8 in the variable meals.
+# The third line of code is using the not equal comparison operator to compare the values of the
+# attendees variable and the meals variable. That conditional statement will return the boolean of
+# true, which will then be printed to the terminal.
 
 #-------------------
 # PART 3: Logical Operators
