@@ -22,31 +22,31 @@ numberDogs = 0
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
-puts number_teachers < number_students
+# puts number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
-puts number_teachers == string_teachers
+# puts number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
-puts number_teachers != number_students
+# puts number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
-puts number_students >= 20
+# puts number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
-puts number_students >= 21
+# puts number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
-puts number_students <= 20
+# puts number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
-puts number_students <= 21
+# puts number_students <= 21
 # this should print: true
 
 
@@ -59,13 +59,13 @@ puts number_students <= 21
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
-puts 4 < 9
-#YOU DO: Explain.
+# puts 4 < 9
+# YOU DO: Explain.
 # This line of code is using the less than comparison operator to compare the integers 4 and 9,
 # to return a boolean value of false and print that boolean value to the terminal.
 
 books = 3
-puts 4 < books
+# puts 4 < books
 # YOU DO: Explain.
 # The first line of code is storing the integer 3 in the variable books.
 # The second line of code is using the less than comparison operator to compare the integer 4 and
@@ -74,7 +74,7 @@ puts 4 < books
 
 friends = 6
 siblings = 2
-puts friends > siblings
+# puts friends > siblings
 # YOU DO: Explain.
 # The first line of code is storing the integer 6 in the variable friends.
 # The second line of code is storing the integer 2 in the variable of siblings.
@@ -84,7 +84,7 @@ puts friends > siblings
 
 attendees = 9
 meals = 8
-puts attendees != meals
+# puts attendees != meals
 # YOU DO: Explain.
 # The first line of code is storing the integer 9 in the variable attendees.
 # The second line of code is storing the integer 8 in the variable meals.
@@ -101,9 +101,9 @@ finished_homework = false
 
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
-puts is_hungry && finished_homework
+# puts is_hungry && finished_homework
 # Determine if the user is hungry or has completed their homework
-puts is_hungry || finished_homework
+# puts is_hungry || finished_homework
 
 loves_to_play = true
 loves_dog_park = false
@@ -112,16 +112,31 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
+puts loves_to_play && loves_treats
 
 
 # Determine if the dog loves to play and loves the dog park
+puts loves_to_play && loves_dog_park
 
 
 # Determine if the dog loves to play or loves the dog park
+puts loves_to_play || loves_dog_park
 
 
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
 
+if age < 2
+    is_puppy = true
+else age > 2
+    is_puppy = false
+end
+
+puts loves_to_play && is_puppy
+
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: 
+# The final line of code evaluated to the boolean value of true. 
+# In the last line of code, the conditional statement returned true because the variable 
+# loves_to_play is set to true, AND the is_puppy variable is set to true because the 
+# age variable is set to the integer 1.
