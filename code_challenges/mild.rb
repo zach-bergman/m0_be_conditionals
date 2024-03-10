@@ -6,6 +6,6 @@ integer = 3
 
 if integer.even?
     p "even"
-else integer.odd?
+else
     p "odd"
 end

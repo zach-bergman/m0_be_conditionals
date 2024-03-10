@@ -44,9 +44,9 @@
 num_quarters = 1
 
 if num_quarters >= 2
-  puts "I have enough money for a gumball"
+  p "I have enough money for a gumball"
 else num_quarters < 2
-  puts "I don't have enough money for a gumball"
+  p "I don't have enough money for a gumball"
 end
 
 
@@ -71,13 +71,22 @@ cups_of_flour = 3
 has_sauce = true
 
 if cups_of_flour == 1 && has_sauce == true
-  print "I cannot make pizza"
+  p "I cannot make pizza"
 elsif cups_of_flour == 5 && has_sauce == false
-  print "I cannot make pizza"
+  p "I cannot make pizza"
 elsif cups_of_flour == 2 && has_sauce == true
-  print "I can make pizza"
+  p "I can make pizza"
 else cups_of_flour == 3 && has_sauce == true
-  print "I can make pizza"
+  p "I can make pizza"
+end
+
+case
+when cups_of_flour >= 2 && has_sauce == true
+  p "I can make pizza"
+when cups_of_flour >= 2 && has_sauce == false
+  p "I cannot make pizza"
+else cups_of_flour < 2 || has_sauce == false
+  p "I cannot make pizza"
 end
 
 

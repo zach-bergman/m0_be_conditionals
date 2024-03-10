@@ -14,3 +14,14 @@ elsif integer % 5 == 0
 else 
     p "#{integer}"
 end
+
+# case
+# when integer % 3 == 0 && integer % 5 == 0 
+#     p "FizzBuzz"
+# when integer % 3 == 0
+#     p "Fizz"
+# when integer % 5 == 0
+#     p "Buzz"
+# else 
+#     p "#{integer}"
+# end
